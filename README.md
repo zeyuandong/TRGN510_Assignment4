@@ -19,6 +19,16 @@ git clone https://github.com/zeyuandong/TRGN510_Assignment4/
 
 ** Run the programe ```./ensg2hugo.py -f[0-9] Your_file.csv >Your_file.hugo.csv```, an option “-f [0-9]” where -f2 would pick the 2nd column. If there is no “-f” then the first column is used.**
 
+<pre>
+if sys.argv[1][:2]=="-f":
+    change = sys.argv[1][2]
+    test_gene = sys.argv[2]
+else:
+    change = 1
+    test_gene = sys.argv[1]
+col_need=int(change)-1
+</pre>
+
 ## Dependencies
 
 **1.wget**
